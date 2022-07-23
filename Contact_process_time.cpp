@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
 
 	outfile.open(name, ios::trunc);
 	
-	srand(time(NULL));//10263);
+	srand(time(NULL));
 	
 	prob_creation = lambda/(1+lambda);
 		
