@@ -8,6 +8,8 @@
 #include <fstream>
 #include <sstream>
 
+using namespace std;
+
 int main(int argc, char *argv[]){
 	double lambda = 3.2978,
 			prob_creation,
@@ -65,6 +67,8 @@ int main(int argc, char *argv[]){
 	std::ofstream outfile;
 	
 	sprintf(name,"CP_density_decay_L_%d_lambda_%.3f.dat", L, lambda);
+
+	outfile.open(name, ios::trunc);
 	
 	srand(time(NULL));
 	
